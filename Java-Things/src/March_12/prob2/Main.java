@@ -32,8 +32,12 @@ public class Main {
     }
 
     //IMPLEMENT
-    public static List/*<specify type>*/ combine(List<Staff> staff, List<Teacher> teachers) {
-        return new ArrayList/*<specify type>*/();
+    public static List<EmployeeData> combine(List<Staff> staff, List<Teacher> teachers) {
+
+        List<EmployeeData> combinedList = new ArrayList<>();
+        combinedList.addAll(staff);
+        combinedList.addAll(teachers);
+        return  combinedList;
     }
 
 }
